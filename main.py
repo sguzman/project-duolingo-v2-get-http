@@ -164,7 +164,7 @@ class Server(http_pb2_grpc.DuoServicer):
         logging.info('Found friends for "%s":', name)
         logging.info(friends)
 
-        return server_pb2.Friends(names=friends)
+        return http_pb2.Friends(names=friends)
 
 
 def init() -> None:
